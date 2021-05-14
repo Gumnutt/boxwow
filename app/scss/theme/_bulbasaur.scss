@@ -1,0 +1,108 @@
+//  Color Map
+$colors: ( 
+  'a': 'transparent',
+  'b': '#506028',
+  'c': '#a0d040',
+  'd': '#70a830',
+  'e': '#b8f870',
+  'f': '#101010',
+  'g': '#389090',
+  'h': '#307070',
+  'i': '#184848',
+  'j': '#80e8c0',
+  'k': '#60d0b0',
+  'l': '#f8f8f8',
+  'm': '#c8c8c8',
+  'n': '#a80030',
+  'o': '#ffffff',
+  'p': '#f86860',
+  'q': '#e82038',
+);
+
+
+
+//  The amtrix for the pixel art
+$pixel-art: ( 
+    bulba:( 
+      (a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a b b a a a a a a a a a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a b c b a a a a a a a a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a b c c b a b b a a a a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a b b c c d b b c b a a a a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a d d d d d d b b b b b b b c c c c d d c c b a a a a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a d d d d e e e e e e e e e c c c c c c d d c c c c b f f f a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a d d e e e e e e e e e e e e e e c c c d d c c c c c c b d d d f a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a d d e e e e e e e e e e e e e e c c d d c c c c c c c c d d d d f a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a d e e e e e e e e e e e e d d d c e e e e c c c c c c c c b d d f a a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a d e e e e e e e e e e e d d e e e e e e e e e c c c c c c c b d d f a a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a d e e e e e e e e e e e d e e e e e e e e e e e c c c c c c d b d d f a a a a a a )
+(a a a a a a a a g h i a a a a a a a a a a a a a a a a a d e e e e e e e e e i i i f e e e e e e e e e e e c c c c c d b d d f a a a a a a )
+(a a a a a a a g j j j i i a a a a a a a a a a a a a a d e e e e e e e e i i j j j k f e e e e e e e e e e c c c c c d b d d f a a a a a a )
+(a a a a a a a g j j j j k i i a a g g g g g g h h h h h h h h e e e h i j j j j k k g c e e e e e e e e e c c c c c d b d d f a a a a a a )
+(a a a a a a g j j j j j j k h h g j j j j j j j j j j k k k k h h h j j j j j j k k k f e e e e e e e e e c c c c c c b d d d f a a a a a )
+(a a a a a a g j j j j j g h j j j j j j j j j j j j j j j k k k g j j j j j j k k k k f e e e e e e e e e c c c c c c d b d d f a a a a a )
+(a a a a a a g j j j k g j j j j j j j j j j j j j j j j j j k k k j j j j j k k k k k f e e e e e e e e c c c c c c c d b d d d f a a a a )
+(a a a a a g j j j k j j j j j j j j j j k g g g g g g k j j k k k k j j j k k k k k k f e e e e e e e e c c c c c c c d b d d d d f a a a )
+(a a a a a h j g j j j j j j j j j k g g g g g g g g g j j j j k k k k j k k k k k k k g f e e e e e e c c c c c c c c d d b d d d f a a a )
+(a a a a a h h j j j j j j j j j g g g g g g g g g g k j j j j k k k k k k k k k k k k g f e e e e e c c c c c c c c c d d b d d d d f a a )
+(a a a a a h j j j j j j j j j j g g g g g g g g g g j j j j j k k k k k k k k k k k g g f e e e e c c c c c c c c c c d d d b d d d f a a )
+(a a a a h k j j j j j j j j j j k g g g g g g g g j j j j j j k k k k k k k k k k k g g g f e c c c c c c c c c c c d d d d b d d d d f a )
+(a a a a h j j j j j j j j j j j j g g g g g g g j j j j j j j k k k k k k k k k k k g g g f c c c c c c c c c c c c d d d d b d d d d f a )
+(a a a h k j j j j j j k j j j j j j g g g g g j j j j j j j k k k k k k k k k k k g g g g f c c c c c c c c c c c d d d d d d b d d d f a )
+(a a a h k g j j j j j g k j j j j j j g g g j j j j k j j j k h h h k k k k k k k g g g g f d c c c c c c c c c d d d d d d d b d d d d f )
+(a a a h k l g j k j j g g j j j j j j j j j j j j g k j j g h l l m h k k k k k g g g g g g f d c c c c c c d d d d d d d d d b d d d d f )
+(a a h k m l g j g j j g g j j j j j j j j j j j k g j j h n n m l l l h k k k k g g g g g g f d d d d d d d d d d d d d d d d b d d d d f )
+(a a i k l n g j g j j j k j j j j j j j j j j j g j j g n n n n l l l m h k k g g g g g g g i i d d d d d d d d d d d d d d d b d d d d f )
+(a a i k o n n g j j j j j j j j j j j j g k j j g j k h n n n n m l l l h k g g g g g g g g h f i d d d d d d d d d d d d d d b d d d d f )
+(a i g m p n q g j j j j j j j j j j j g g g j j j k g n n n n n n l l l m h g g g g g g g g g f g i d d d d d d d d d d d d b d d d d d f )
+(a i g l q n p g j j j j j j j j j j g g g g j k k k g n p q n n n l l l l h g g g g g g g g g f g g i d d d d d d d d d d d b d d d d d f )
+(a i k l q q l g k j j j j j j j j g g g g g k k k k h n l p n n n l l l l m g g g g g g g g g f g g g i i d d d d d d d d d d d d d d f a )
+(a h k l q q l m k k k j j j j j j j g g g k k k k g n n l l n q q l l l l m g g g g g g g g g i g g g g g i d d d d d d d b d d d d d f a )
+(h k k l q q l p k k k k k k k k k k k k k k k k k g q n l l q q q l l l l m g g g g g g g g g h g g g g g g i f d d d d b d d d d d d f a )
+(h k k l q p p q k k k k k k k k k k k k k k k k k h q q l p q p q l l l l m g g g g g g g g g g g g g g i i i i f b d b d d d d d d f a a )
+(h k k k l p p g k k k k k k k k k k k k k k k k k h p q p p p p q l l l l g g g g g g g g g g g g g g i i i i i i f f d d d d d d d f a a )
+(h k k k k q g k k k k k k k k k k k k k k k k k k h p p p p p q q l l l g g g g g g g g g g g g g g g g i i i i i i i f f d d d d f a a a )
+(f k k k k k k k k k k k k k k k k k k k k k k k k k q p p p p q l l m g g g g g g g g g g g g g g g g g g i i i i i i i i f d d f a a a a )
+(f g k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k g g g g g g g g g g g g g g g g g g g g i i i i i i i i f f a a a a a )
+(a f g i k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k k g g g i g g g g g g g g g g g g g g g g i i i i i i i g i a a a a a )
+(a f g g i g k k k k k g k k k k k k g k k k k k k k k k k k k k k k g g h i g g g g g g g h g g g g g g g g g g i i i i g g g g i a a a a )
+(a a f g g i i g k k k k k k k k k k k k k k k k k k k k k k k g h f f f i g g g g g g g h g g g g g g g g g g g g g g g g g g g g i a a a )
+(a a a f g g h f f g k k k k k k k k k k k k k k k k k g h i f f f l h h g g g g g g g g i g g g g g g g g g g g g g g g g g g g g i a a a )
+(a a a a f g g i l f f i g k k k k k k k k g h i f f f f n n n n n n g g g g g g g g g f g g g g g g g g g g g g g g g g g g g g g g i a a )
+(a a a a a f g g h n n n f f f f f f f f f f n q p p p p p q n n h g g g g g g g g g f g g g g g g g g g g g g g g g g g g g g g g g i a a )
+(a a a a a a f g g g h n n n n n n q p p p p p p p p p p p p p g g g g g g g g g f f g g g g g g g g g g g g g g g g g g g g g g g g i a a )
+(a a a a a a a f f g g g h n n n p p p p p p p p p p p p p g g g g g g g g g f f g g g g g g g g g g g g g g g g g g g g g g g g g g g i a )
+(a a a a a a a a a f f g g g h q p p p p p p p p p p g g g g g g g g g g f f g g g g g g g g g h g g g g h g g g g g g g g g g g g g g i a )
+(a a a a a a a a a a a f f g g g g g g g g g g g g g g g g g g g g f f f g g g g g g g g g g g i g g g i g g i i i g g g g g g g g g g i a )
+(a a a a a a a a a a a i g f f f g g g g g g g g g g g g f f f f f g g g g g g g g g g g g g g g i h i g g i i i i g g g g g g g g g g i a )
+(a a a a a a a a a a a i k k k g f f f f f f f f f f f f g g g g g g g g g g g g g g g g g g g g i f g g i i i i i i g g g g g g g g g f a )
+(a a a a a a a a a a a i k k k k k k g i g g g g g g g g g g g g g g i k k k k g g g g g g g g g i f g i i i i i i i g g g g g g g g g f a )
+(a a a a a a a a a a a h k k k k k k k g i g g g g g g g g g g g g i k k k k k k k g g g g g g g f g g i i i i i i i g g g g g g g g g f a )
+(a a a a a a a a a a a h k k k k k k k k g g g g g g g g g g g g g i k k k g k k k k g g g g g g f g g g i i i i i i g g g g g g g g g f a )
+(a a a a a a a a a a a h k k g k k k k k g g g i g g g g g g g g i k k k k g g k k k k g g g g h f g g g g i i i i i g g g g g g g g f a a )
+(a a a a a a a a a a a a h g g g k k k k k g g g i f g g g g g g i k k g k k k k k k k g g g g i f g g g g g i i i i g g g g g g g g f a a )
+(a a a a a a a a a a a a h g g g k k k k k g g g g g f f g g g g i k g g g k k k k k k k g g h i f g g g g g g i i g g g g g g g g g f a a )
+(a a a a a a a a a a a a h g g k k k k k k g g g g g g g f f f i k g g g g k k k k k k k g g i f f g g g g g g g g g g g g g g g g f a a a )
+(a a a a a a a a a a a a a h g k k k k k k g g g g g g i a a a i k g g g g g k k k k k k g h f a f i g g g g g g g g g g g g g g g f a a a )
+(a a a a a a a a a a a a a i k k k k k k k g g g g g g f a a a h k g g g g g k k k k k g g f a a a f g g g g g g g g g g g g g g f a a a a )
+(a a a a a a a a a a a a a i k k k k k k g g g g g g f a a a h k k k g g g g k k k k k g f a a a a a f g g g g g g g g g g g g g f a a a a )
+(a a a a a a a a a a a a a a i k k k k k g g g g g f a a a a h k k k k g g k k k k k g f a a a a a a a f g g g g g g g g g g g f a a a a a )
+(a a a a a a a a a a a a a a h k h h k h g g g g f a a a a a h k k k k k k k k k k g f a a a a a a a a f h g h h g g h g g h f a a a a a a )
+(a a a a a a a a a a a a a i o i o o i o i g i f a a a a a a h k h h k h k k k k g f a a a a a a a a a h o i o o i i o h i f a a a a a a a )
+(a a a a a a a a a a a a a a f f f f f f f f a a a a a a a i o i o o i o i k k f f a a a a a a a a a a f f f f f f f f f a a a a a a a a a )
+(a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a f f f f f f f f f a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a )
+    )
+);
+
+.pixel-block {
+  &_pixelised--bulbasaur {
+    height: $size*length(map-get($pixel-art, bulba));
+    width: $size*length(nth(map-get($pixel-art, bulba), 1));
+    &::after {
+      height: $size;
+      width: $size;
+      content: '';
+      position: absolute;
+      box-shadow: pixelise(map-get($pixel-art, bulba), $size);
+    }
+  }
+}

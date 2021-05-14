@@ -1,0 +1,24 @@
+//  Pixel Size
+$size: 1px !default;
+
+//  Read matrix and pixelize
+@function pixelise($matrix, $size) {
+  $sh: '';
+  $rows: length($matrix);
+  @for $row from 1 through $rows {
+      $row-num: nth($matrix, $row);
+      @for $col from 1 through length($row-num) {
+        $dot: nth($row-num, $col);
+        @if $dot != 'a'{
+            $sh: $sh + ($size*$col) + ' ' + ($size*$row) + ' ' + map-get($colors, $dot);
+            @if not ($col==length($row-num) and $row==$rows) {
+                $sh: $sh + ',';
+            }
+        }
+        @debug $dot + ' out of ' + length($dot); 
+      }
+      
+  }
+  $sh: str-slice($sh, 1, str-length($sh)- 1);
+  @return unquote($sh);
+}
