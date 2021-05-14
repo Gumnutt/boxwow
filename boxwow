@@ -1,0 +1,60 @@
+#!/usr/bin/env php
+<?php
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\OutputInterface;
+use Boxwow\BoxwowResource;
+
+(new Application('BoxWow', '0.0.😂'))
+      ->register('ify')
+      ->addArgument('source', InputArgument::REQUIRED, 'Input directory or image file.')
+      ->addArgument('dest', InputArgument::OPTIONAL, 'Output directory or file, will output to subdirectory /boxwow.')
+      ->addOption('label', null, InputOption::VALUE_OPTIONAL, 'A label to use for the file name and css class (defaults to the name of the input file minus extension).')
+      ->addOption('maxsize', null, InputOption::VALUE_OPTIONAL, 'The maximum width/height.')
+      ->addOption('template', null, InputOption::VALUE_OPTIONAL, 'An output template to print to if it exists.')
+      ->setCode(function (InputInterface $input, OutputInterface $output) {
+
+        $source = $input->getArgument('source');
+        $dest = $input->getArgument('dest');
+        $template = $input->getOption('template');
+        $max_size = $input->getOption('maxsize');
+        $label = $input->getOption('label');
+
+        if (!$max_size) {
+          $max_size = 0;
+        }
+        if (!$label) {
+          $label = FALSE;
+        }
+
+        $wow = new BoxwowResource($source, $max_size);
+
+        $wow->processColors();
+        $popular = $wow->defaultColor();
+
+        $output->writeln("<info>Input file: " . $source. "</info>");
+        $output->writeln("<info>Most common color #" . $popular . "</info>");
+        $output->writeln("<info>Total pixels: " . array_sum($wow->colorStats) . "</info>");
+
+        if ($template) {
+          $file = $wow->generateFromPhpTemplate($template, $dest, $label);
+          $output->writeln("<info>Output file: " . $file . "</info>");
+        }
+        else {
+          $dest_file = $dest . '/' . $label . '.html';
+          $output->writeln("Source -> " . $source);
+          $output->writeln("Dest -> " . $dest);
+          $output->writeln("Label -> " . $label);
+          $output->writeln("Max size -> " . $max_size);
+          $output->writeln("destination file -> " . $dest_file);
+          file_put_contents($dest_file, $output);
+          $output->writeln("<warning>Didn't do nothing.</warning>");
+        }
+
+      })
+      ->getApplication()
+      ->run();

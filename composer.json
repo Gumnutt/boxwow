@@ -1,0 +1,11 @@
+{
+    "name": "dumpnut/boxwow",
+    "require": {
+        "symfony/console": "^5.0"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Boxwow" : "src"
+        }
+    }
+}
