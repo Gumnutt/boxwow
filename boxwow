@@ -45,13 +45,6 @@ use Boxwow\BoxwowResource;
           $output->writeln("<info>Output file: " . $file . "</info>");
         }
         else {
-          $dest_file = $dest . '/' . $label . '.html';
-          $output->writeln("Source -> " . $source);
-          $output->writeln("Dest -> " . $dest);
-          $output->writeln("Label -> " . $label);
-          $output->writeln("Max size -> " . $max_size);
-          $output->writeln("destination file -> " . $dest_file);
-          file_put_contents($dest_file, $output);
           $output->writeln("<warning>Didn't do nothing.</warning>");
         }
 
